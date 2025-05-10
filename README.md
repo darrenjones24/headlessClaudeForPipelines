@@ -43,19 +43,6 @@ docker run -it \
 - `ANTHROPIC_VERTEX_PROJECT_ID`: Your Google Cloud project ID
 - `PROMPT`: Initial prompt to send to Claude Code
 
-## Example
-
-```bash
-# Run with a simple prompt
-docker run -it \
-  -e GOOGLE_APPLICATION_CREDENTIALS="/app/.config/gcloud/application_default_credentials.json" \
-  --mount type=bind,source=${HOME}/.config/gcloud,target=/app/.config/gcloud \
-  -e CLAUDE_CODE_USE_VERTEX=1 \
-  -e CLOUD_ML_REGION=us-east5 \
-  -e ANTHROPIC_VERTEX_PROJECT_ID=ai-sre-dev-84b7 \
-  -e PROMPT="write a hello world in python" \
-  claude
-```
 
 ## Container Details
 
