@@ -30,7 +30,7 @@ docker run -it \
   --mount type=bind,source=${HOME}/.config/gcloud,target=/app/.config/gcloud \
   -e CLAUDE_CODE_USE_VERTEX=1 \
   -e CLOUD_ML_REGION=us-east5 \
-  -e ANTHROPIC_VERTEX_PROJECT_ID=ai-sre-dev-84b7 \
+  -e ANTHROPIC_VERTEX_PROJECT_ID=<vertex_project_id> \
   -e PROMPT="your prompt here" \
   claude
 ```
